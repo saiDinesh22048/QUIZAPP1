@@ -61,7 +61,7 @@ export const QuestionDisplay = ({ playerId }) => {
           {showAnswer && (
             <div className="answer-reveal">
               <p className="answer-text">
-                <strong>A:</strong> {currentQuestion.answer}
+                <strong> {currentQuestion.answer} </strong>
               </p>
             </div>
           )}
