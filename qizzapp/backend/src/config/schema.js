@@ -95,7 +95,7 @@ optionA: "Element is hidden",
 optionB: "Element is disabled",
 optionC: "Element is outside viewport",
 optionD: "Element is overlapped by another element",
-answer: "Element is overlapped by another element",
+answer: "D. Element is overlapped by another element",
 price: 2000000
 },
 
@@ -106,7 +106,7 @@ optionA: "Returns visible text",
 optionB: "Ignores hidden elements",
 optionC: "Returns rendered text as seen by user",
 optionD: "Extracts text based on browser layout engine",
-answer: "Returns rendered text as seen by user",
+answer: "C. Returns rendered text as seen by user",
 price: 2000000
 },
 
@@ -117,84 +117,84 @@ optionA: "CSS opacity 0",
 optionB: "Element outside viewport",
 optionC: "Element inside shadow DOM",
 optionD: "All of the above",
-answer: "All of the above",
+answer: "D. All of the above",
 price: 1500000
 },
 
 {
-name: "MS Dhoni",
+name: "Yepuri Sai Dinesh",
 question: "What is returned when getText() is called on a hidden element?",
 optionA: "Null",
 optionB: "Exception",
 optionC: "Empty String",
 optionD: "Hidden text",
-answer: "Empty String",
+answer: "C. Empty String",
 price: 2000000
 },
 
 {
-name: "Sanju Samson",
+name: "MS Dhoni",
 question: "Why does this code sometimes throw ElementClickInterceptedException?\n\ndriver.findElement(By.id(\"login\")).click();",
 optionA: "Element not visible",
 optionB: "Another element overlaps it",
 optionC: "Element inside iframe",
 optionD: "DOM refreshed",
-answer: "Another element overlaps it",
+answer: "B. Another element overlaps it",
 price: 1500000
 },
 
 {
-name: "Harshal Patel",
+name: "Sanju Samson",
 question: "What happens if findElement() does not find any matching element?",
 optionA: "Returns null",
 optionB: "Returns empty list",
 optionC: "Throws NoSuchElementException",
 optionD: "Waits indefinitely",
-answer: "Throws NoSuchElementException",
+answer: "C. Throws NoSuchElementException",
 price: 1000000
 },
 
 {
-name: "Riyan Parag",
+name: "Rishab Pant",
 question: "What does findElements() return if no elements are found?",
 optionA: "null",
 optionB: "Empty List",
 optionC: "Throws NoSuchElementException",
 optionD: "Throws TimeoutException",
-answer: "Empty List",
+answer: "B. Empty List",
 price: 1000000
 },
 
 {
-name: "AB de Villiers",
+name: "Rinku Singh",
 question: "What is the difference between presenceOfElementLocated and visibilityOfElementLocated?",
 optionA: "No difference",
 optionB: "Presence checks DOM only; Visibility checks display status",
 optionC: "Visibility ignores DOM",
 optionD: "Presence checks CSS",
-answer: "Presence checks DOM only; Visibility checks display status",
+answer: "B. Presence checks DOM only; Visibility checks display status",
 price: 1000000
 },
 
 {
-name: "Hardik Pandya",
+name: "Tikam Chand Gupta",
 question: "What is returned when getText() is called on a hidden element?",
 optionA: "Null",
 optionB: "Exception",
 optionC: "Empty String",
 optionD: "Hidden text",
-answer: "Empty String",
+answer: "C. Empty String",
 price: 1500000
 },
 
 {
-name: "Sunil Narine",
+name: "KL Rahul",
 question: "What happens here?\n\ndriver.switchTo().frame(0);\ndriver.switchTo().defaultContent();\ndriver.switchTo().frame(0);",
 optionA: "Frame switches successfully",
 optionB: "Exception",
 optionC: "Nested frame issue",
 optionD: "Frame already selected",
-answer: "Frame switches successfully",
+answer: "A. Frame switches successfully",
 price: 1500000
 },
 
@@ -205,62 +205,62 @@ optionA: "Works normally",
 optionB: "Throws NoSuchElementException",
 optionC: "Throws StaleElementReferenceException",
 optionD: "Click ignored",
-answer: "Throws StaleElementReferenceException",
+answer: "C. Throws StaleElementReferenceException",
 price: 2000000
 },
 
 {
-name: "Ben Stokes",
+name: "Surya Bramananthan",
 question: "Which of the following ensures logging only when validation fails?",
 optionA: "log().all()",
 optionB: "log().ifError()",
 optionC: "log().ifValidationFails()",
 optionD: "log().ifFails()",
-answer: "log().ifValidationFails()",
+answer: "C. log().ifValidationFails()",
 price: 1500000
 },
 
 {
-name: "Steve Smith",
+name: "Axar Patel",
 question: "What does this code return?\n\nResponse res = given()\n.when()\n.get(\"/users\");\n\nSystem.out.println(res.path(\"data.id\"));\n\nAssume the response:\n{\n \"data\":[\n  {\"id\":1},\n  {\"id\":2}\n ]\n}",
 optionA: "1",
 optionB: "[1,2]",
 optionC: "null",
 optionD: "Exception",
-answer: "[1,2]",
+answer: "B. [1,2]",
 price: 1000000
 },
 
 {
-name: "Joe Root",
+name: "Surya Kumar Yadav",
 question: "What request is sent?\n\ngiven()\n.pathParam(\"id\", 5)\n.queryParam(\"id\", 10)\n.when()\n.get(\"/users/{id}\")",
 optionA: "/users/5?id=10",
 optionB: "/users/10?id=5",
 optionC: "/users/5?id=5",
 optionD: "/users/10?id=10",
-answer: "/users/5?id=10",
+answer: "A. /users/5?id=10",
 price: 1000000
 },
 
 {
-name: "Kane Williamson",
+name: "Abhishek Sharma",
 question: "Serialization Trick\n\ngiven()\n.body(Map.of(\"id\", 10))\n.when()\n.post(\"/users\")\n\nIf content-type is not set, what happens?",
 optionA: "Request fails",
 optionB: "Automatically converted to JSON",
 optionC: "Sent as plain text",
 optionD: "Sent as form data",
-answer: "Automatically converted to JSON",
+answer: "B. Automatically converted to JSON",
 price: 1500000
 },
 
 {
-name: "Babar Azam",
+name: "Gollapalli Abhiram",
 question: "Extract vs Assert Trick\n\nint id = given()\n.when()\n.get(\"/users/1\")\n.then()\n.statusCode(200)\n.extract()\n.path(\"id\");\n\nWhich is TRUE?",
 optionA: "Assertion happens after extraction",
 optionB: "Extraction happens before validation",
 optionC: "Validation happens before extraction",
 optionD: "Both run simultaneously",
-answer: "Validation happens before extraction",
+answer: "C. Validation happens before extraction",
 price: 1500000
 }
 ];
