@@ -16,9 +16,8 @@ const app = express();
 const httpServer = createServer(app);
 const io = new SocketServer(httpServer, {
   cors: {
-    origin: 'http://localhost:5173',
-    methods: ['GET', 'POST'],
-    credentials: true
+    origin: '*',
+    methods: ['GET', 'POST']
   }
 });
 
@@ -88,3 +87,4 @@ httpServer.listen(PORT, () => {
 });
 
 export { io };
+
