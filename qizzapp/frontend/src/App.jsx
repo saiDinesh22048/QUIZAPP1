@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { SocketProvider } from './context/SocketContext';
 import { AuctionProvider } from './context/AuctionContext';
 import { QuizProvider } from './context/QuizContext';
