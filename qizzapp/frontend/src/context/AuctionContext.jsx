@@ -16,7 +16,7 @@ export const AuctionProvider = ({ children }) => {
 
   const fetchTeams = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auction/teams');
+      const response = await axios.get('https://quizapp-imt6.onrender.com/api/auction/teams');
       setTeams(response.data.data);
     } catch (err) {
       setError(err.message);
@@ -26,7 +26,7 @@ export const AuctionProvider = ({ children }) => {
 
   const fetchPlayers = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auction/players');
+      const response = await axios.get('https://quizapp-imt6.onrender.com/api/auction/players');
       setPlayers(response.data.data);
     } catch (err) {
       setError(err.message);
@@ -36,7 +36,7 @@ export const AuctionProvider = ({ children }) => {
 
   const fetchAvailablePlayers = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auction/players/available');
+      const response = await axios.get('https://quizapp-imt6.onrender.com/api/auction/players/available');
       setAvailablePlayers(response.data.data);
     } catch (err) {
       setError(err.message);
@@ -47,11 +47,11 @@ export const AuctionProvider = ({ children }) => {
   const setCurrentPlayerRemote = async (player) => {
     try {
       if (player) {
-        await axios.post('http://localhost:5000/api/auction/set-current-player', {
+        await axios.post('https://quizapp-imt6.onrender.com/api/auction/set-current-player', {
           playerId: player.id
         });
       } else {
-        await axios.post('http://localhost:5000/api/auction/set-current-player', {});
+        await axios.post('https://quizapp-imt6.onrender.com/api/auction/set-current-player', {});
       }
       setCurrentPlayer(player);
     } catch (err) {
@@ -63,7 +63,7 @@ export const AuctionProvider = ({ children }) => {
   const assignPlayerToTeam = async (playerId, teamId, soldPrice) => {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/auction/assign', {
+      const response = await axios.post('https://quizapp-imt6.onrender.com/api/auction/assign', {
         playerId,
         teamId,
         soldPrice
@@ -73,7 +73,7 @@ export const AuctionProvider = ({ children }) => {
       await fetchAvailablePlayers();
       
       // Find the assigned player and show congratulations
-      const assignedPlayer = await axios.get(`http://localhost:5000/api/auction/players/${playerId}`);
+      const assignedPlayer = await axios.get(`https://quizapp-imt6.onrender.com/api/auction/players/${playerId}`);
       const team = teams.find(t => t.id === teamId);
       setLastAssignedPlayer({ player: assignedPlayer.data.data, team: team });
       setCurrentPlayer(null);
@@ -91,7 +91,7 @@ export const AuctionProvider = ({ children }) => {
   const undoLastAuction = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/auction/undo');
+      const response = await axios.post('https://quizapp-imt6.onrender.com/api/auction/undo');
       await fetchTeams();
       await fetchPlayers();
       await fetchAvailablePlayers();
@@ -108,7 +108,7 @@ export const AuctionProvider = ({ children }) => {
   const resetAuction = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/auction/reset');
+      const response = await axios.post('https://quizapp-imt6.onrender.com/api/auction/reset');
       await fetchTeams();
       await fetchPlayers();
       await fetchAvailablePlayers();
@@ -147,7 +147,7 @@ export const AuctionProvider = ({ children }) => {
     // Fetch current player on mount
     const fetchCurrentPlayer = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auction/current-player');
+        const response = await axios.get('https://quizapp-imt6.onrender.com/api/auction/current-player');
         setCurrentPlayer(response.data.data);
       } catch (err) {
         console.error('Error fetching current player:', err);
@@ -194,3 +194,4 @@ export const useAuction = () => {
   }
   return context;
 };
+
