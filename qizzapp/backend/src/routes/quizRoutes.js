@@ -4,9 +4,11 @@ import { QuizController } from '../controllers/QuizController.js';
 const router = express.Router();
 
 router.get('/leaderboard', QuizController.getLeaderboard);
-router.get('/questions/:playerId', QuizController.getQuestion);
-router.get('/questions', QuizController.getAllQuestions);
+
 router.get('/questions/undisplayed', QuizController.getUndisplayedQuestions);
+router.get('/questions', QuizController.getAllQuestions);
+router.get('/questions/:playerId', QuizController.getQuestion);
+
 router.get('/current-question', QuizController.getCurrentQuestion);
 
 router.post('/score', QuizController.updateScore);
