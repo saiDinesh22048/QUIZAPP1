@@ -88,37 +88,181 @@ export const seedInitialData = () => {
 
         // Insert players (cricketers and questions)
         const players = [
-{ name: "Rohit Sharma", question: "Why can ElementNotInteractableException occur?", answer: "Element is overlapped by another element", optionA: "Element is hidden", optionB: "Element is disabled", optionC: "Element is outside viewport", optionD: "Element is overlapped by another element", price: 2000000 },
+{
+name: "Rohit Sharma",
+question: "Why can ElementNotInteractableException occur?",
+optionA: "Element is hidden",
+optionB: "Element is disabled",
+optionC: "Element is outside viewport",
+optionD: "Element is overlapped by another element",
+answer: "Element is overlapped by another element",
+price: 2000000
+},
 
-{ name: "Virat Kohli", question: "Which is the MOST correct statement about getText()?", answer: "Returns rendered text as seen by user", optionA: "Returns visible text", optionB: "Ignores hidden elements", optionC: "Returns rendered text as seen by user", optionD: "Extracts text based on browser layout engine", price: 2000000 },
+{
+name: "Virat Kohli",
+question: "Which is the MOST correct statement about getText()?",
+optionA: "Returns visible text",
+optionB: "Ignores hidden elements",
+optionC: "Returns rendered text as seen by user",
+optionD: "Extracts text based on browser layout engine",
+answer: "Returns rendered text as seen by user",
+price: 2000000
+},
 
-{ name: "Tilak Verma", question: "Why can visibilityOfElementLocated still fail even when element is visible in browser?", answer: "All of the above", optionA: "CSS opacity 0", optionB: "Element outside viewport", optionC: "Element inside shadow DOM", optionD: "All of the above", price: 1500000 },
+{
+name: "Tilak Verma",
+question: "Why can visibilityOfElementLocated still fail even when element is visible in browser?",
+optionA: "CSS opacity 0",
+optionB: "Element outside viewport",
+optionC: "Element inside shadow DOM",
+optionD: "All of the above",
+answer: "All of the above",
+price: 1500000
+},
 
-{ name: "MS Dhoni", question: "What is returned when getText() is called on a hidden element?", answer: "Empty String", optionA: "Null", optionB: "Exception", optionC: "Empty String", optionD: "Hidden text", price: 2000000 },
+{
+name: "MS Dhoni",
+question: "What is returned when getText() is called on a hidden element?",
+optionA: "Null",
+optionB: "Exception",
+optionC: "Empty String",
+optionD: "Hidden text",
+answer: "Empty String",
+price: 2000000
+},
 
-{ name: "Sanju Samson", question: "Why does this code sometimes throw ElementClickInterceptedException? driver.findElement(By.id(\"login\")).click();", answer: "Another element overlaps it", optionA: "Element not visible", optionB: "Another element overlaps it", optionC: "Element inside iframe", optionD: "DOM refreshed", price: 1500000 },
+{
+name: "Sanju Samson",
+question: "Why does this code sometimes throw ElementClickInterceptedException?\n\ndriver.findElement(By.id(\"login\")).click();",
+optionA: "Element not visible",
+optionB: "Another element overlaps it",
+optionC: "Element inside iframe",
+optionD: "DOM refreshed",
+answer: "Another element overlaps it",
+price: 1500000
+},
 
-{ name: "Harshal Patel", question: "What happens if findElement() does not find any matching element?", answer: "Throws NoSuchElementException", optionA: "Returns null", optionB: "Returns empty list", optionC: "Throws NoSuchElementException", optionD: "Waits indefinitely", price: 1000000 },
+{
+name: "Harshal Patel",
+question: "What happens if findElement() does not find any matching element?",
+optionA: "Returns null",
+optionB: "Returns empty list",
+optionC: "Throws NoSuchElementException",
+optionD: "Waits indefinitely",
+answer: "Throws NoSuchElementException",
+price: 1000000
+},
 
-{ name: "Riyan Parag", question: "What does findElements() return if no elements are found?", answer: "Empty List", optionA: "null", optionB: "Empty List", optionC: "Throws NoSuchElementException", optionD: "Throws TimeoutException", price: 1000000 },
+{
+name: "Riyan Parag",
+question: "What does findElements() return if no elements are found?",
+optionA: "null",
+optionB: "Empty List",
+optionC: "Throws NoSuchElementException",
+optionD: "Throws TimeoutException",
+answer: "Empty List",
+price: 1000000
+},
 
-{ name: "Unknown", question: "What is the difference between presenceOfElementLocated and visibilityOfElementLocated?", answer: "Presence checks DOM only; Visibility checks display status", optionA: "No difference", optionB: "Presence checks DOM only; Visibility checks display status", optionC: "Visibility ignores DOM", optionD: "Presence checks CSS", price: 1000000 },
+{
+name: "AB de Villiers",
+question: "What is the difference between presenceOfElementLocated and visibilityOfElementLocated?",
+optionA: "No difference",
+optionB: "Presence checks DOM only; Visibility checks display status",
+optionC: "Visibility ignores DOM",
+optionD: "Presence checks CSS",
+answer: "Presence checks DOM only; Visibility checks display status",
+price: 1000000
+},
 
-{ name: "Hardik Pandya", question: "What is returned when getText() is called on a hidden element?", answer: "Empty String", optionA: "Null", optionB: "Exception", optionC: "Empty String", optionD: "Hidden text", price: 1500000 },
+{
+name: "Hardik Pandya",
+question: "What is returned when getText() is called on a hidden element?",
+optionA: "Null",
+optionB: "Exception",
+optionC: "Empty String",
+optionD: "Hidden text",
+answer: "Empty String",
+price: 1500000
+},
 
-{ name: "Sunil Narine", question: "What happens here? driver.switchTo().frame(0); driver.switchTo().defaultContent(); driver.switchTo().frame(0);", answer: "Frame switches successfully", optionA: "Frame switches successfully", optionB: "Exception", optionC: "Nested frame issue", optionD: "Frame already selected", price: 1500000 },
+{
+name: "Sunil Narine",
+question: "What happens here?\n\ndriver.switchTo().frame(0);\ndriver.switchTo().defaultContent();\ndriver.switchTo().frame(0);",
+optionA: "Frame switches successfully",
+optionB: "Exception",
+optionC: "Nested frame issue",
+optionD: "Frame already selected",
+answer: "Frame switches successfully",
+price: 1500000
+},
 
-{ name: "Jasprit Bumrah", question: "What will this code do? WebElement element = driver.findElement(By.id(\"login\")); driver.navigate().refresh(); element.click();", answer: "Throws StaleElementReferenceException", optionA: "Works normally", optionB: "Throws NoSuchElementException", optionC: "Throws StaleElementReferenceException", optionD: "Click ignored", price: 2000000 },
+{
+name: "Jasprit Bumrah",
+question: "What will this code do?\n\nWebElement element = driver.findElement(By.id(\"login\"));\ndriver.navigate().refresh();\nelement.click();",
+optionA: "Works normally",
+optionB: "Throws NoSuchElementException",
+optionC: "Throws StaleElementReferenceException",
+optionD: "Click ignored",
+answer: "Throws StaleElementReferenceException",
+price: 2000000
+},
 
-{ name: "Unknown", question: "Which of the following ensures logging only when validation fails?", answer: "log().ifValidationFails()", optionA: "log().all()", optionB: "log().ifError()", optionC: "log().ifValidationFails()", optionD: "log().ifFails()", price: 1500000 },
+{
+name: "Ben Stokes",
+question: "Which of the following ensures logging only when validation fails?",
+optionA: "log().all()",
+optionB: "log().ifError()",
+optionC: "log().ifValidationFails()",
+optionD: "log().ifFails()",
+answer: "log().ifValidationFails()",
+price: 1500000
+},
 
-{ name: "Unknown", question: "What does this code return? Response res = given().when().get(\"/users\"); System.out.println(res.path(\"data.id\"));", answer: "[1,2]", optionA: "1", optionB: "[1,2]", optionC: "null", optionD: "Exception", price: 1000000 },
+{
+name: "Steve Smith",
+question: "What does this code return?\n\nResponse res = given()\n.when()\n.get(\"/users\");\n\nSystem.out.println(res.path(\"data.id\"));\n\nAssume the response:\n{\n \"data\":[\n  {\"id\":1},\n  {\"id\":2}\n ]\n}",
+optionA: "1",
+optionB: "[1,2]",
+optionC: "null",
+optionD: "Exception",
+answer: "[1,2]",
+price: 1000000
+},
 
-{ name: "Unknown", question: "What request is sent? given().pathParam(\"id\",5).queryParam(\"id\",10).when().get(\"/users/{id}\")", answer: "/users/5?id=10", optionA: "/users/5?id=10", optionB: "/users/10?id=5", optionC: "/users/5?id=5", optionD: "/users/10?id=10", price: 1000000 },
+{
+name: "Joe Root",
+question: "What request is sent?\n\ngiven()\n.pathParam(\"id\", 5)\n.queryParam(\"id\", 10)\n.when()\n.get(\"/users/{id}\")",
+optionA: "/users/5?id=10",
+optionB: "/users/10?id=5",
+optionC: "/users/5?id=5",
+optionD: "/users/10?id=10",
+answer: "/users/5?id=10",
+price: 1000000
+},
 
-{ name: "Unknown", question: "If content-type is not set while sending body Map.of(\"id\",10) in POST request, what happens?", answer: "Automatically converted to JSON", optionA: "Request fails", optionB: "Automatically converted to JSON", optionC: "Sent as plain text", optionD: "Sent as form data", price: 1500000 },
+{
+name: "Kane Williamson",
+question: "Serialization Trick\n\ngiven()\n.body(Map.of(\"id\", 10))\n.when()\n.post(\"/users\")\n\nIf content-type is not set, what happens?",
+optionA: "Request fails",
+optionB: "Automatically converted to JSON",
+optionC: "Sent as plain text",
+optionD: "Sent as form data",
+answer: "Automatically converted to JSON",
+price: 1500000
+},
 
-{ name: "Unknown", question: "Extract vs Assert Trick: In REST Assured extraction with validation, what happens first?", answer: "Validation happens before extraction", optionA: "Assertion happens after extraction", optionB: "Extraction happens before validation", optionC: "Validation happens before extraction", optionD: "Both run simultaneously", price: 1500000 }
+{
+name: "Babar Azam",
+question: "Extract vs Assert Trick\n\nint id = given()\n.when()\n.get(\"/users/1\")\n.then()\n.statusCode(200)\n.extract()\n.path(\"id\");\n\nWhich is TRUE?",
+optionA: "Assertion happens after extraction",
+optionB: "Extraction happens before validation",
+optionC: "Validation happens before extraction",
+optionD: "Both run simultaneously",
+answer: "Validation happens before extraction",
+price: 1500000
+}
 ];
 
         players.forEach((player) => {
